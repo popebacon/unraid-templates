@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>ExpressVPN</Name>
+  <Repository>misioslav/expressvpn</Repository>
+  <Registry>https://hub.docker.com/r/misioslav/expressvpn</Registry>
+  <Network>host</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://www.expressvpn.com/support/</Support>
+  <Project>https://github.com/Misioslav/expressvpn</Project>
+  <Overview>Connect to ExpressVPN safe and secure with this template.</Overview>
+  <Category>Downloaders: Security: Tools:</Category>
+  <WebUI>http://[IP]:[PORT:80]</WebUI>
+  <TemplateURL/>
+  <Icon>https://styles.redditmedia.com/t5_3o8xz/styles/communityIcon_upefxkw7njr61.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1694399942</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="Port" Target="80" Default="80" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">80</Config>
+  <Config Name="Actication Code" Target="CODE" Default="CODE" Mode="" Description="This is your activation code found when you login to the ExpressVPN website." Type="Variable" Display="always" Required="false" Mask="false">CODE</Config>
+  <Config Name="Server" Target="SERVER" Default="SMART" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">SMART</Config>
+  <Config Name="TTY" Target="TTY" Default="true" Mode="" Description="" Type="Label" Display="always" Required="false" Mask="false">true</Config>
+  <Config Name="cap-add" Target="cap-add" Default="NET_ADMIN" Mode="" Description="" Type="Label" Display="always" Required="false" Mask="false">NET_ADMIN</Config>
+  <Config Name="Detach" Target="detach" Default="true" Mode="" Description="" Type="Label" Display="always" Required="false" Mask="false">true</Config>
+  <Config Name="Device" Target="" Default="" Mode="" Description="" Type="Device" Display="always" Required="false" Mask="false">/dev/net/tun</Config>
+</Container>
